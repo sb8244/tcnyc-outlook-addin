@@ -27,8 +27,11 @@
   }
 
   function enrichCompanyHtml(html) {
-    var el = angular.element(html);
-    el.find("h3").prepend(angular.element("<i class='ms-Icon ms-Icon--work'>"))
+    var el = $(html);
+    el.find("h3").prepend(angular.element("<i class='ms-Icon ms-Icon--work'>"));
+    el.find(".perphret-item-heading").each(function(i, el) {
+      $(el).next().insertBefore(el);
+    });
     return el.html();
   }
 
