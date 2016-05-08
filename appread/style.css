@@ -1,10 +1,10 @@
 h3.perphret-header {
   margin: 0;
-  background: #E6F2FA;
+  background: #0078D7;
+  color: white;
   padding: 1em;
 
   font-size: 28px;
-  color: #333;
   font-family: Segoe UI Light WestEuropean,Segoe UI Light,Segoe UI,Tahoma,Arial,sans-serif;
   font-weight: 400;
 }
@@ -32,7 +32,7 @@ h3.perphret-header {
   font-family: Segoe UI Light WestEuropean,Segoe UI Light,Segoe UI,Tahoma,Arial,sans-serif;
   font-size: 21px;
   color: #333;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .text-center {
