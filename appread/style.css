@@ -1,0 +1,40 @@
+h3.perphret-header {
+  margin: 0;
+  background: #E6F2FA;
+  padding: 1em;
+
+  font-size: 28px;
+  color: #333;
+  font-family: Segoe UI Light WestEuropean,Segoe UI Light,Segoe UI,Tahoma,Arial,sans-serif;
+  font-weight: 400;
+}
+
+.perphret-row {
+  height: 45px;
+  padding: 15px;
+}
+
+.perphret-item.perphret-item-1 {
+  width: 100%;
+  display: inline-block;
+}
+.perphret-item.perphret-item-2 {
+  width: 50%;
+  display: inline-block;
+}
+.perphret-item.perphret-item-3 {
+  width: 33%;
+  display: inline-block;
+}
+
+
+.perphret-item-heading {
+  font-family: Segoe UI Light WestEuropean,Segoe UI Light,Segoe UI,Tahoma,Arial,sans-serif;
+  font-size: 21px;
+  color: #333;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
