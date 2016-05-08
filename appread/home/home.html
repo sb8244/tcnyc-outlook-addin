@@ -1,1 +1,48 @@
-{{::vm.title}}
+<div class="ms-Grid">
+  <div class="ms-Grid-row ms-bgColor-themePrimary ms-font-xxl ms-fontColor-themeLighterAlt ms-u-slideDownIn20" style="padding: 20px 0;">
+    <div class="ms-Grid-col ms-u-sm6 ms-u-md6 ms-u-lg6">
+      <i class="ms-Icon ms-Icon--person" aria-hidden="true"></i>{{::vm.user_name}}
+    </div>
+    <div class="ms-Grid-col ms-u-sm6 ms-u-md6 ms-u-lg6">
+      <i class="ms-Icon ms-Icon--work" aria-hidden="true"></i>{{::vm.company_name}}
+    </div>
+  </div>
+  <div class="ms-Grid-row" style="padding:20px 0 0 0;">
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-xxl ms-fontColor-themeNeutral">{{::vm.mrr}}</span>
+    </div>
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-xxl ms-fontColor-themeNeutral">{{::vm.licenses}}</span>
+    </div>
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-xxl ms-fontColor-themeNeutral">{{::vm.client_age}}</span>
+    </div>
+  </div>
+  <div class="ms-Grid-row">
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-l ms-fontColor-themeDarkAlt"><i class="ms-Icon ms-Icon--money" aria-hidden="true" style="padding:0 5px 0 0;"></i>MRR</span>
+    </div>
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-l ms-fontColor-themeDarkAlt"><i class="ms-Icon ms-Icon--group" aria-hidden="true" style="padding:0 5px 0 0;"></i>Licenses</span>
+    </div>
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-l ms-fontColor-themeDarkAlt"><i class="ms-Icon ms-Icon--cake" aria-hidden="true" style="padding:0 5px 0 0;"></i>Client Length</span>
+    </div>
+  </div>
+  <div class="ms-Grid-row" style="padding:20px 0 0 0;">
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-xxl ms-fontColor-themeNeutral">{{::vm.account_manager}}</span>
+    </div>
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-xxl ms-fontColor-themeNeutral">{{::vm.location}}</span>
+    </div>
+  </div>
+  <div class="ms-Grid-row">
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-l ms-fontColor-redDark"><i class="ms-Icon ms-Icon--heart" aria-hidden="true" style="padding:0 5px 0 0;"></i>Account Manager</span>
+    </div>
+    <div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4">
+      <span class="ms-font-l ms-fontColor-themeDarkAlt"><i class="ms-Icon ms-Icon--mapMarker" aria-hidden="true" style="padding:0 5px 0 0;"></i>Headquarters</span>
+    </div>
+  </div>
+</div>
