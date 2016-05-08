@@ -1,13 +1,13 @@
 <div ng-if="vm.loading">
   Loading...
 </div>
-<div ng-if="!vm.loading">
+<div ng-if="!vm.loading" class="ms-font-m">
   <div ng-if="vm.not_found">
     <h3 class="perphret-header">No Data</h3>
-    <p class="text-center ms-font-l">It looks like {{ vm.email_address }} isn't associated with one of your customers.</p>
+    <p class="text-center ms-font-l">This email isn't associated with one of your customers.</p>
   </div>
 
-  <div>
+  <div ng-if="!vm.not_found">
     <span ng-bind-html="vm.user_html"></span>
     <span ng-bind-html="vm.company_html"></span>
   </div>

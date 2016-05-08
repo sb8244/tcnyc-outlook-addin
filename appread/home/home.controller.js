@@ -14,7 +14,7 @@
     vm.email_address = Office.context.mailbox.item.from.emailAddress;
     companyApi.findForEmail(vm.email_address).then(function(resp) {
       vm.company_html = resp.data.company_html;
-      vm.user_html = resp.data.user_html;
+      vm.user_html = resp.data.html;
     }).catch(function(err) {
       return companyApi.findCompanyForEmail(vm.email_address).then(function(resp) {
         vm.company_html = resp.data.company_html;
