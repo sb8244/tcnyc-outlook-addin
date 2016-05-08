@@ -1,1 +1,13 @@
-{{::vm.title}}
+<div ng-if="vm.loading">
+  Loading...
+</div>
+<div ng-if="!vm.loading">
+  <div ng-if="vm.not_found">
+    It looks like {{ vm.email_address }} isn't associated with one of your customers.
+  </div>
+
+  <div>
+    <span ng-bind-html="vm.user_html"></span>
+    <span ng-bind-html="vm.company_html"></span>
+  </div>
+</div>

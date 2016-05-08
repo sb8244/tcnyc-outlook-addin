@@ -9,10 +9,16 @@
    */
   function homeController(companyApi){
     var vm = this;  // jshint ignore:line
-    vm.title = 'home controller';
+    vm.loading = true;
 
-    companyApi.findForEmail("steve@test.com").then(function(company) {
-      vm.title = company;
+    vm.email_address = Office.context.mailbox.item.from.emailAddress;
+    companyApi.findForEmail(Office.context.mailbox.item.from.emailAddress).then(function(resp) {
+      vm.company_html = resp.data.company_html;
+      vm.user_html = resp.data.user_html;
+    }).catch(function(err) {
+      vm.not_found = true;
+    }).finally(function() {
+      vm.loading = false;
     });
   }
 

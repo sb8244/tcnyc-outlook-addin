@@ -1,16 +1,16 @@
 (function(){
   'use strict';
 
-  angular.module('officeAddin')
-         .service('companyApi', ["$q", function($q) {
-           class CompanyApi {
-             findForEmail(email) {
-               return $q(function(resolve) {
-                 resolve(email);
-               });
-             }
-           }
+  angular.module('officeAddin').service('companyApi', ["$http", function($http) {
+    class CompanyApi {
+      findForEmail(email) {
+        return $http({
+            method: 'GET',
+            url: 'https://tcnyc.herokuapp.com/api/users/find?email=' + email
+          });
+        }
+      }
 
-           return new CompanyApi();
-         }]);
+    return new CompanyApi();
+  }]);
 })();
